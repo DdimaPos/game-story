@@ -39,7 +39,7 @@ image battlefield2 = "battlefield.png"
 
 
 # Start of the game
-label start:
+label scene_1:
     scene doctor_office with fade
     show dr at left
     show mc at right
@@ -47,7 +47,8 @@ label start:
     doctor "Let's start simple. What do you remember about yourself?"
     mc "Not much. My name, my training... fragments of something else."
     doctor "And the last thing you recall before 'it' happened?"
-    
+
+label scene_2:
     scene black with fade
     play sound "static.wav"  # Add glitch sound effect
     show battlefield2:
@@ -97,6 +98,8 @@ label start:
     play sound "explosion.wav"
     scene black with vpunch
     stop sound fadeout 1.0
+
+label scene_3:
     
     scene doctor_office with fade
     show dr at left
@@ -114,12 +117,14 @@ label start:
     mc "A quiet town. A detective job. Small cases. Small crimes. Trying to put myself back together."
     doctor "(Doctor nods, hands a small bottle of pills) That’s enough for today. Here—take these. One pill a day. Don’t forget."
 
+label scene_4:
     scene city1 with fade
     play music "calm.mp3" fadein 1.0
     mc "(Narrating) It was one of those rare peaceful days. The kind where the city breathes in slow motion, and you can almost pretend nothing bad ever happens."
     mc "(Narrating) No calls, no reports, no paperwork. Just a free day to do absolutely nothing."
     mc "(Narrating) I went home. Laid on the bed. And let the silence take over."
-    
+
+label scene_5:
     scene apartment_night with fade
     pause 1.5
     play sound "phone_ring.wav"
@@ -129,7 +134,8 @@ label start:
     operator "(Urgent tone) Detective. We need you!!. Now!!."
     mc "(Sleepy) What happened?"
     operator "Murder. First in years. Address is on [Street_Name]  everyone's already there."
-    
+
+label scene_6:
     scene crimescene1 with fade
     play music "tension.mp3" fadein 1.0
     "*The detective approaches PA at the crime scene*"
@@ -143,6 +149,7 @@ label start:
     mc "And the victim?"
     pa "(Lowering voice) You'll want to see for yourself."
     
+label scene_7:
     scene murder_house with fade
     pause 1.0
     "*They enter the house, the metallic smell of blood hitting them immediately*"
@@ -159,7 +166,7 @@ label start:
     mc "Something about this doesn’t sit right. We need to check this call."
     "*PA nods*"
 
-
+label scene_8:
     scene interrogation with fade
     show killer1 at left
     show mc at right
@@ -185,7 +192,7 @@ label start:
     officer2 "(mocking) Guys like him don't deserve your time. He's just playing dumb."
     "*(The detective exchange a look with them and reluctantly leave the room.)*"
 
-
+label scene_9:
     scene policedepartment with fade
     show pa at left
     show mc at right
@@ -202,12 +209,14 @@ label start:
     mc "I don’t know. But it’s the only lead we’ve got."
     "*They head out, the weight of the case hanging heavy in the air.*"
 
+label scene_10:
     scene mc_car_night with fade
     "*The detective lights a cigarette, the glow reflecting in his tired eyes*"
     show mc_smoke at right
     "Some cases stick with you.{w} Not because of the blood, or the bodies, or the mess.{w} But because of the questions they leave behind."
     "This one...{w=0.3} this one felt different.{w} Like it wasn't just about the killer or the victim.{w} Like it was about something bigger."
 
+label scene_11:
     scene mc_house with fade
     show pa at left
     show mc at right

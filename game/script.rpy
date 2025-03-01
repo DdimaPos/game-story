@@ -32,6 +32,10 @@ image jail = "jail.png"
 image abandoned = "abandoned.png"
 image abandoned_inside = "abandonedinside.png"
 image murder_house = "housemurder2.png"
+image mc_smoke = "mcsmoke.png"
+image mc_tel = "mctel.png"
+image battlefield2 = "battlefield.png"
+
 
 
 # Start of the game
@@ -44,13 +48,51 @@ label start:
     mc "Not much. My name, my training... fragments of something else."
     doctor "And the last thing you recall before 'it' happened?"
     
-    scene battlefield with dissolve
-    show terrorist at center
-    mc "I was a soldier. Special Corps. But the details are... blurred."
-    
-# here we need some battlefield images
-    
-    mc "I had a mission. Capture someone alive. Someone important. I... I succeeded."
+    scene black with fade
+    play sound "static.wav"  # Add glitch sound effect
+    show battlefield2:
+        alpha 0.5 blur 50
+        linear 0.3 alpha 1.0 blur 0
+    with vpunch
+
+    mc "(voice broken) I was...{w=0.5} a soldier.{w} Special Corps.{w=0.3} But the details..." 
+
+    # Memory glitch effect
+    show battlefield2:
+        xalign 0.5 yalign 0.5
+        linear 0.1 xalign 0.51 yalign 0.51
+        linear 0.1 xalign 0.49 yalign 0.49
+        repeat 3
+    with hpunch
+
+    show terrorist at center:
+        alpha 0.0
+        linear 0.2 alpha 1.0
+        linear 0.2 alpha 0.5
+        repeat
+
+    play sound "glitch2.wav"
+
+    mc "(strained) ...are...{w=0.7} blurred."
+
+    # Rapid flash sequence
+    scene black with Dissolve(0.1)
+    show terrorist at center with pixellate
+    hide terrorist with dissolve
+    show battlefield2 with vpunch
+    hide battlefield2 with dissolve
+    show terrorist at left with hpunch
+    hide terrorist with dissolve
+
+    play sound "heartbeat.wav"
+    show battlefield2:
+        matrixcolor TintMatrix("#ff0000")  # Red tint
+        alpha 0.7
+    with vpunch
+
+    mc " Had to...{w} capture...{w} someone alive... {w} someone important"
+    show terrorist at center with hpunch
+    mc "(whisper) ...I succeeded."
     
     play sound "explosion.wav"
     scene black with vpunch
@@ -64,14 +106,6 @@ label start:
     
     doctor "Your records say you were awarded medals for your service."
     
-    # Medal flashback
-    menu:
-        "Show medal flashback?":
-#Need photo for medals
-            pause 2.0
-            scene doctor_office with fade
-            show dr at left
-            show mc at right
     
     mc "Yeah... Guess I did something right. Not that it matters now."
     doctor "Why do you say that?"
@@ -87,8 +121,10 @@ label start:
     mc "(Narrating) I went home. Laid on the bed. And let the silence take over."
     
     scene apartment_night with fade
-    play sound "phone_ring.wav"
     pause 1.5
+    play sound "phone_ring.wav"
+    show mc_tel at center
+    show mc at right
     mc "(Groggily) Yeah?"
     operator "(Urgent tone) Detective. We need you!!. Now!!."
     mc "(Sleepy) What happened?"
@@ -96,7 +132,7 @@ label start:
     
     scene crimescene1 with fade
     play music "tension.mp3" fadein 1.0
-    "*MC approaches PA at the crime scene*"
+    "*The detective approaches PA at the crime scene*"
     scene crimescene2 with fade
     show mc at right
     show pa at left
@@ -116,28 +152,28 @@ label start:
     pa "(pointing) That's what we're trying to figure out. The victim was mauled. Cuts everywhere."
     mc "(kneeling by body) And the suspect?"
     pa "(leaning in) Sitting outside. Barely talking. Just keeps repeating that it wasn't him."
-    "*MC scans the room, eyes landing on an old rotary phone hanging off the hook.*"
+    "*The detective scans the room, eyes landing on an old rotary phone hanging off the hook.*"
     mc "The call. The suspect is the one who called this in?"
     pa "Yeah. He called 911 himself."
-    "*MC picks up the phone, the line still faintly humming. He clicks it off, deep in thought.*"
+    "*The detective picks up the phone, the line still faintly humming. He clicks it off, deep in thought.*"
     mc "Something about this doesn’t sit right. We need to check this call."
-    "*PA nods. The investigation begins.*"
+    "*PA nods*"
 
 
     scene interrogation with fade
     show killer1 at left
     show mc at right
-    "*MC sits across from the trembling suspect*"
+    "*The detective sits across from the trembling suspect*"
     mc "Let's start from the beginning. What do you remember?"
-    killer "(sobbing) I... I don't know. I swear, I don't remember doing this. I woke up, and he was... he was already..."
+    killer "(sobbing) I... {w=0.7} I don't know. I swear, I don't remember doing this.I woke up, and he was... {w=0.6} he was already..."
     mc "(leaning forward) You called the police. Why?"
-    killer "(shaking) I... I thought I was helping. I didn't know what else to do."
+    killer "(shaking) I...{w=0.4} I thought I was helping. I didn't know what else to do."
     mc "What about the phone call? The one before this happened. Do you remember it?"
-    killer "(frowning): Yeah… yeah, I do. It was… some pizza place. They were advertising a deal or something."
+    killer "(frowning): Yeah… {w=0.7} yeah, I do. It was… some pizza place. They were advertising a deal or something."
     mc "What did they say? Anything specific?"
     killer "(struggling to recall) It was a man’s voice. No background noise, just… some music. I don’t know why, but it felt familiar. Like I’d heard it before."
     mc "And then?"
-    killer "Then… nothing. Everything went blank. Next thing I knew, I was standing over him, and… and…"
+    killer "Then… {w=0.6} nothing. Everything went blank. Next thing I knew, I was standing over him, and…  {w=0.9}and…"
     "*He breaks down, sobbing.*"
 
     hide mc
@@ -147,13 +183,13 @@ label start:
     "*Two officers burst into the room*"
     officer1 "(sneering) That's enough. We'll take it from here."
     officer2 "(mocking) Guys like him don't deserve your time. He's just playing dumb."
-    "*(MC exchange a look with them and reluctantly leave the room.)*"
+    "*(The detective exchange a look with them and reluctantly leave the room.)*"
 
 
     scene policedepartment with fade
     show pa at left
     show mc at right
-    "*MC and PA regroup in the hallway*"
+    "*The detective and PA regroup in the hallway*"
     pa "(crossing arms) So, what do you think? You buying his story?"
     mc "(pacing) I don't know. But something's off. The phone call, the music, the way he's reacting... it doesn't add up."
     pa "(sighing) You think he's telling the truth? That he didn't do it?"
@@ -167,15 +203,15 @@ label start:
     "*They head out, the weight of the case hanging heavy in the air.*"
 
     scene mc_car_night with fade
-    #Here we need an image of him smoking
-    "*MC lights a cigarette, the glow reflecting in his tired eyes*"
+    "*The detective lights a cigarette, the glow reflecting in his tired eyes*"
+    show mc_smoke at right
     "Some cases stick with you.{w} Not because of the blood, or the bodies, or the mess.{w} But because of the questions they leave behind."
-    "This one...{w} this one felt different.{w} Like it wasn't just about the killer or the victim.{w} Like it was about something bigger."
+    "This one...{w=0.3} this one felt different.{w} Like it wasn't just about the killer or the victim.{w} Like it was about something bigger."
 
     scene mc_house with fade
     show pa at left
     show mc at right
-    "*Next morning, PA bursts into MC's house*"
+    "*Next morning, PA bursts into the detective's house*"
     mc "What are you doing here?"
     pa "(impatient) We're detectives, remember? I know where you live. And I took the bus. Now, can we get moving?"
     mc "(sighting) Fine. Let's go."

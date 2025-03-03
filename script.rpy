@@ -39,6 +39,8 @@ image battlefield2 = "battlefield.png"
 
 
 # Start of the game
+label start:
+    jump scene_1
 label scene_1:
     scene doctor_office with fade
     show dr at left

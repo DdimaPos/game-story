@@ -3,10 +3,11 @@ define doctor = Character("Doctor", color="#a8d8ea")
 define mc = Character("Detective", color="#c0c0c0")
 define pa = Character("PA", color="#808080")
 define killer = Character("Killer", color="#ff6666")
+define killer2 = Character("Killer", color="#ff8666")
 define officer1 = Character("Officer 1", color="#999999")
 define officer2 = Character("Officer 2", color="#999999")
 define operator = Character("Operator", color="#66ccff")
-define mysterious = Character("Mysterious Caller", color="#ff0000")
+define misterious = Character("Mysterious Caller", color="#ff0000")
 define Street_Name = "2980 Lyndon Street"
 
 # Character images
@@ -14,8 +15,10 @@ image side mc = "MC.png"
 image side pa = "PA.png"
 image side doctor = "dr.png"
 image side killer = "killer1.png"
+image side killer2 = "killer2.png"
 image asshole_cop1 = "assholecop1.png"
 image asshole_cop2 = "assholecop2.png"
+image villain = "villaingun.png"
 
 # Scene backgrounds
 image doctor_office = "doctoroffice.png"
@@ -74,17 +77,17 @@ label scene_12:
     #barely audible
     show killer2 at slight_right
     with slowdissolve
-    killer "(barely audible) I...{w=0.5} I don't remember.{w=0.7} It was something… {w=1} something simple."
+    killer2 "(barely audible) I...{w=0.5} I don't remember.{w=0.7} It was something… {w=1} something simple."
     mc "Think.{w} Was it a man or a woman who called?"
-    killer "A man.{w=0.3} Just a man."
-    killer "And…{w} there was music.{w} I don’t know why,{w=0.5} but it felt… {w=1}familiar"
+    killer2 "A man.{w=0.3} Just a man."
+    killer2 "And…{w} there was music.{w} I don’t know why,{w=0.5} but it felt… {w=1}familiar"
     mc "What kind of music?"
-    killer "I don’t know. I can’t remember. But it’s important. I know it is."
+    killer2 "I don’t know. I can’t remember. But it’s important. I know it is."
     "Detective exchanges a look with PA, who shrugs helplessly."
     mc "We’ll find it.{w} But you need to help us.{w} Anything else you remember?"
     
     show killer2 at shake_animation
-    killer "{size=+7}Please…!!!{/size}{w=0.3} You have to believe me!{w=0.3} It wasn’t me!{w=0.3} I didn’t do this!"
+    killer2 "{size=+7}Please…!!!{/size}{w=0.3} You have to believe me!{w=0.3} It wasn’t me!{w=0.3} I didn’t do this!"
     "MC nods, but before he can respond, the two officers from earlier appear, their mocking laughter echoing down the hallway."
 
 
@@ -117,7 +120,7 @@ label scene_13:
   
 label scene_14:
     # SOUND of closing door of a car
-    scene crimescene2 with fade
+    scene city1 with fade
     show mc at left
     show pa at right
 
@@ -129,14 +132,24 @@ label scene_14:
     #They need to approach the house
     #ART how they are approaching the house(check the scenario scene 14)
     
-    pa "This is… something else."
+    scene housemurder1 with fade
+    show mc at left with dissolve
+    show pa at right with dissolve
+
+    pa "This is…{w=0.5} something else."
     mc "Same MO. Brutal cuts, same kind of message. And look—"
     pa "You think it’s connected?"
     mc "I know it is. The killer—where is he?"
-    pa "Outside. He’s in custody. But… you’re gonna want to see this."
+    pa "Outside."
+    pa "He’s in custody." 
+    pa "But…{w=0.4} you’re gonna want to see this."
 
 label scene_15:
     # BACKGROUND (possibly we have it) outside the house(scene 15)
+    scene city1 with fade
+    show mc at left with dissolve
+    show killer1 at center with dissolve
+    show pa at right with dissolve
     mc "What’s your name?"
     killer "I… I don’t know. I don’t know what happened."
     mc "What do you remember?" 
@@ -148,21 +161,24 @@ label scene_15:
 
 
 label scene_16:
+    scene hallway with fade
+    show mc at left with dissolve
+    show pa at right with dissolve
     # SOUND of phone calls, papers and people in rush
     # SPRITE need the PA with a neutral emotion
     pa "This is a nightmare. Two murders, two killers, both claiming they don’t remember a thing. And that phone call… it’s the only link we’ve got."
     mc "We need to track that call. Find out where it came from."
     pa  "Easier said than done. Without a name or a location, we’re shooting in the dark."
     # SOUND ringing phone and picking up the phone
-    officer "Detective! It’s for you."
+    "Officer" "Detective! It’s for you."
 
 
 label scene_17:
     #ART of how mc is holding a phone
-    mc "This is Detective [MC’s Name]."
-    misterious_caller "Listen carefully. If you want to stop the next murder, come to [PLACE] at midnight. Tell no one. If you do, you’ll find nothing but an empty room."
+    mc "This is Detective \[MCs Name\]."
+    misterious "Listen carefully. If you want to stop the next murder, come to \[PLACE\] at midnight. Tell no one. If you do, you\’ll find nothing but an empty room."
     mc "Who is this? What do you want?"
-    misterious_caller "Midnight. Don’t be late."
+    misterious "Midnight. Don’t be late."
     # SOUND Beeping sound 
     # SOUND of hanging the phone sound 
     pa "Who was that?"
@@ -187,18 +203,20 @@ label scene_20:
     # SOUND of gun click
 
 label scene_21:
-    scene abandonedinside with disolve
-    show mc at right with disolve
+    scene abandonedinside with dissolve
+    show mc at right with dissolve
     mc "I’m here!{w} Show yourself!"
     #SOUND music should become more intense(I think you get it Ion. As in scenario)
-    show villaingun at left with fade
-    misterious_caller "Drop your weapon. Or he dies."
+    show villain at left with fade
+    show hostagealive at slight_left
+    misterious "Drop your weapon. Or he dies."
     "The only option I have in this moment is to obey"
     #SOUND of how he puts something down and how it glides on floor
-    misterious_caller "Good. Now we can talk."
+    misterious "Good. Now we can talk."
     mc "What is this?"
-    misterious_caller "The address of the next murder. The choice is yours."
+    misterious "The address of the next murder. The choice is yours."
     # flasheffect
     # SOUND of the gun shot with echo
+    show hostageDead
     # SOUND Intense music, maybe we can make the previous music faster or louder
     return

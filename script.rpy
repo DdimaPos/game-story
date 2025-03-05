@@ -66,6 +66,7 @@ label scene_12:
 
     ####SCREEN 12
     scene jail
+    "The killer sits slumped in his cell, staring blankly at the wall"
     show mc at slight_left
     with slowdissolve
     mc "We need to talk.{w} About the pizza place.{w} What was the name?"
@@ -102,6 +103,7 @@ label scene_12:
 label scene_13:
     scene mc_car_noon with fade
     show mc at left
+    # SPRITE need a sprite how pa holds a map(could be just a paper that looks like a map)RT
     show pa at right
     pa "We’ve checked every pizza place in the city"
     pa "Nothing matches the description"
@@ -114,6 +116,7 @@ label scene_13:
     mc "Let's go"
   
 label scene_14:
+    # SOUND of closing door of a car
     scene crimescene2 with fade
     show mc at left
     show pa at right
@@ -124,6 +127,7 @@ label scene_14:
     mc "Let’s see what we’re dealing with."
     
     #They need to approach the house
+    #ART how they are approaching the house(check the scenario scene 14)
     
     pa "This is… something else."
     mc "Same MO. Brutal cuts, same kind of message. And look—"
@@ -132,6 +136,7 @@ label scene_14:
     pa "Outside. He’s in custody. But… you’re gonna want to see this."
 
 label scene_15:
+    # BACKGROUND (possibly we have it) outside the house(scene 15)
     mc "What’s your name?"
     killer "I… I don’t know. I don’t know what happened."
     mc "What do you remember?" 
@@ -143,42 +148,57 @@ label scene_15:
 
 
 label scene_16:
+    # SOUND of phone calls, papers and people in rush
+    # SPRITE need the PA with a neutral emotion
     pa "This is a nightmare. Two murders, two killers, both claiming they don’t remember a thing. And that phone call… it’s the only link we’ve got."
     mc "We need to track that call. Find out where it came from."
     pa  "Easier said than done. Without a name or a location, we’re shooting in the dark."
+    # SOUND ringing phone and picking up the phone
     officer "Detective! It’s for you."
 
 
 label scene_17:
-    #image of how mc is holding a phone
+    #ART of how mc is holding a phone
     mc "This is Detective [MC’s Name]."
     misterious_caller "Listen carefully. If you want to stop the next murder, come to [PLACE] at midnight. Tell no one. If you do, you’ll find nothing but an empty room."
     mc "Who is this? What do you want?"
     misterious_caller "Midnight. Don’t be late."
-    
-    # hang the phone sound 
+    # SOUND Beeping sound 
+    # SOUND of hanging the phone sound 
     pa "Who was that?"
     mc "Just… a friend. Updating me on something. Nothing important."
 
 label scene_18:
+    #ART of the car driving in the rain
     "Some cases pull you in. They wrap themselves around you, digging deeper and deeper until they become a part of you. This one… this one felt like it was just getting started."
     "And that call… it wasn’t just a lead. It was a challenge. A test. And I had no choice but to take it."
 
 label scene_19:
-    
+    # ART of a gun on the table, bullets nearby and bottle on the same table
     "Midnight. That’s when it would happen. That’s when I’d get my answers. Or die trying."
+    # ART how the mc puts go outside through the door (how I imagine this. mc is viewed from back and he just walks towards a white rectangle which is the door) 
 
 
 
 label scene_20:
+    scene abandoned with fade
     "This was it. The place from the call. The place where everything would change."
-
+    # ART image of how he is checking the gun. reference: https://img.freepik.com/premium-photo/reloading-gun-closeup-mens-hands-check-bullets-revolver-barrel-person-prepares-shots-fire_72464-1948.jpg
+    # SOUND of gun click
 
 label scene_21:
+    scene abandonedinside with disolve
+    show mc at right with disolve
     mc "I’m here!{w} Show yourself!"
+    #SOUND music should become more intense(I think you get it Ion. As in scenario)
+    show villaingun at left with fade
     misterious_caller "Drop your weapon. Or he dies."
+    "The only option I have in this moment is to obey"
+    #SOUND of how he puts something down and how it glides on floor
     misterious_caller "Good. Now we can talk."
     mc "What is this?"
     misterious_caller "The address of the next murder. The choice is yours."
-
+    # flasheffect
+    # SOUND of the gun shot with echo
+    # SOUND Intense music, maybe we can make the previous music faster or louder
     return

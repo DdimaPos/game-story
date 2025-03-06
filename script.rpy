@@ -1,4 +1,5 @@
-﻿# Define characters
+﻿
+# Define characters
 define doctor = Character("Doctor", color="#a8d8ea")
 define mc = Character("Detective", color="#c0c0c0")
 define pa = Character("PA", color="#808080")
@@ -52,7 +53,7 @@ label scene_1:
 
 label scene_2:
     scene black with fade
-    play sound "static.wav"  # Add glitch sound effect
+    play sound "static.mp3"  # Add glitch sound effect
     show battlefield2:
         alpha 0.5 blur 50
         linear 0.3 alpha 1.0 blur 0
@@ -74,7 +75,7 @@ label scene_2:
         linear 0.2 alpha 0.5
         repeat
 
-    play sound "glitch2.wav"
+    play sound "glitch.mp3"
 
     mc "(strained) ...are...{w=0.7} blurred."
 
@@ -87,7 +88,7 @@ label scene_2:
     show terrorist at left with hpunch
     hide terrorist with dissolve
 
-    play sound "heartbeat.wav"
+    play sound "heartbeat.mp3"
     show battlefield2:
         matrixcolor TintMatrix("#ff0000")  # Red tint
         alpha 0.7
@@ -97,28 +98,42 @@ label scene_2:
     show terrorist at center with hpunch
     mc "(whisper) ...I succeeded."
     
-    play sound "explosion.wav"
+    play sound "explosion.mp3"
     scene black with vpunch
     stop sound fadeout 1.0
 
 label scene_3:
-    
     scene doctor_office with fade
     show dr at left
     show mc at right
+
     doctor "And then?"
     mc "Nothing. Just... waking up in a hospital. Six months in a coma."
-    
     doctor "Your records say you were awarded medals for your service."
-    
-    
     mc "Yeah... Guess I did something right. Not that it matters now."
     doctor "Why do you say that?"
     mc "Because I can't go back. The trauma, the amnesia... I'm no longer fit for special ops. So they sent me here."
     doctor "Here?"
     mc "A quiet town. A detective job. Small cases. Small crimes. Trying to put myself back together."
-    doctor "(Doctor nods, hands a small bottle of pills) That’s enough for today. Here—take these. One pill a day. Don’t forget."
+    doctor "That's enough for today." 
+    "*Doctor hands you a small bottle of pills.*"
+    doctor "One pill a day. Don't forget."
 
+    menu:
+        "Ask about what those pills are":
+            mc "Doc, what exactly are these pills for? You never really explained."
+            doctor "They're to help with the trauma. The amnesia. They'll keep your mind... stable. Trust me, you need them."
+            mc "Stable how? What aren't you telling me?"
+            doctor "You've been through a lot, Detective. More than most people could handle. Those pills are there to help you cope."
+            mc "And if I stop taking them?"
+            doctor "Don't. Just... don't. Take one a day. No more, no less. That's all you need to know."
+            
+            "*You study the doctor's face but find no answers. You pocket the pills.*"
+            
+        "Say nothing":
+            "You take the pills without comment."
+
+    scene black with fade
 label scene_4:
     scene city1 with fade
     play music "calm.mp3" fadein 1.0
@@ -128,10 +143,11 @@ label scene_4:
 
 label scene_5:
     scene apartment_night with fade
-    pause 1.5
-    play sound "phone_ring.wav"
+    pause 1
+    play sound "phone_ring.mp3"
+    pause 1.4  # Let the sound play for exactly 1 second
+    stop sound fadeout 0.7  # Very quick fadeout to avoid abrupt cutoff
     show mc_tel at center
-    show mc at right
     mc "(Groggily) Yeah?"
     operator "(Urgent tone) Detective. We need you!!. Now!!."
     mc "(Sleepy) What happened?"
@@ -139,7 +155,7 @@ label scene_5:
 
 label scene_6:
     scene crimescene1 with fade
-    play music "tension.mp3" fadein 1.0
+    play music "tension.mp3" 
     "*The detective approaches PA at the crime scene*"
     scene crimescene2 with fade
     show mc at right
@@ -153,46 +169,156 @@ label scene_6:
     
 label scene_7:
     scene murder_house with fade
-    pause 1.0
+    play music "suspense_soundtrack.mp3" 
     "*They enter the house, the metallic smell of blood hitting them immediately*"
     show mc at right
     show pa at left
-    mc "(staring at wall) What the hell happened here?"
-    pa "(pointing) That's what we're trying to figure out. The victim was mauled. Cuts everywhere."
-    mc "(kneeling by body) And the suspect?"
-    pa "(leaning in) Sitting outside. Barely talking. Just keeps repeating that it wasn't him."
-    "*The detective scans the room, eyes landing on an old rotary phone hanging off the hook.*"
-    mc "The call. The suspect is the one who called this in?"
-    pa "Yeah. He called 911 himself."
-    "*The detective picks up the phone, the line still faintly humming. He clicks it off, deep in thought.*"
-    mc "Something about this doesn’t sit right. We need to check this call."
-    "*PA nods*"
+    
+    pa "Gruesome scene. Victim's in bad shape. What do you want to check first?"
+    
+    menu:
+        "Focus on the bloodied message":
+            show mc at center with move
+            "You approach the bloodied scrawl on the wall: {b}\"IT WASN’T ME\"{/b}"
+            mc "(This message… it’s too deliberate. Almost like he’s trying to convince someone. But who?)"
+            pa "Creepy, huh? Like he’s trying to shift the blame."
+            mc "Or maybe he’s telling the truth. Either way, we need to check everything."
+            jump examine_body
+            
+        "Examine the victim’s body":
+            show mc at center with move
+            "You kneel by the covered body, lifting the sheet slightly."
+            mc "(The cuts… they’re too precise. This wasn’t a crime of passion. Someone knew what they were doing.)"
+            pa "Brutal, isn’t it? Whoever did this… they weren’t messing around."
+            mc "Yeah. But why? And why leave a message like that?"
+            jump examine_message
+            
+        "Inspect the hanging phone":
+            show mc at center with move
+            "You move to the old rotary phone hanging off the hook."
+            mc "(Why is it hanging like that? Almost like someone dropped it in a hurry.)"
+            pa "You think the call has something to do with this?"
+            mc "Maybe. The killer called 911 himself. We need to check this."
+            jump examine_body_second
+
+    label examine_body:
+        "You kneel by the covered body, lifting the sheet slightly."
+        mc "(Defensive wounds on the arms. Throat cut clean. Professional work.)"
+        pa "ME says time of death was around midnight. Same time as the 911 call."
+        jump examine_phone
+
+    label examine_message:
+        "You approach the bloodied scrawl on the wall: {b}\"IT WASN’T ME\"{/b}"
+        mc "(Smear patterns suggest the message was written after the blood dried.)"
+        pa "You think the killer came back to leave this?"
+        mc "Or someone else wanted us to find it."
+        jump examine_phone
+
+    label examine_body_second:
+        "You return to the body, carefully examining the wounds."
+        mc "(No signs of struggle. Victim knew the attacker.)"
+        pa "Wallet's still here. Not a robbery."
+        jump examine_message_second
+
+    label examine_phone:
+        "You pick up the humming receiver, checking the dial numbers."
+        mc "(Last dialed number matches the 911 call timestamp.)"
+        pa "So the killer really did call it in himself. Why?"
+        mc "Guilt? Or setting up a scene..."
+        jump final_investigation
+
+    label examine_message_second:
+        mc "(Letters are shaky but deliberate. Someone was panicking when they wrote this.)"
+        pa "You think it's genuine?"
+        mc "Either way, they wanted us to see it."
+        jump final_investigation
+
+    label final_investigation:
+        pa "What's your take, detective?"
+        mc "This was personal. Calculated. That message is either a confession..."
+        mc "...or someone's desperate attempt to frame another."
+        "*The ambient police radio chatter grows louder outside*"
+        jump scene_8
 
 label scene_8:
     scene interrogation with fade
+    play music "tension.mp3" fadein 1.0
     show killer1 at left
     show mc at right
-    "*The detective sits across from the trembling suspect*"
-    mc "Let's start from the beginning. What do you remember?"
-    killer "(sobbing) I... {w=0.7} I don't know. I swear, I don't remember doing this.I woke up, and he was... {w=0.6} he was already..."
-    mc "(leaning forward) You called the police. Why?"
-    killer "(shaking) I...{w=0.4} I thought I was helping. I didn't know what else to do."
-    mc "What about the phone call? The one before this happened. Do you remember it?"
-    killer "(frowning): Yeah… {w=0.7} yeah, I do. It was… some pizza place. They were advertising a deal or something."
-    mc "What did they say? Anything specific?"
-    killer "(struggling to recall) It was a man’s voice. No background noise, just… some music. I don’t know why, but it felt familiar. Like I’d heard it before."
-    mc "And then?"
-    killer "Then… {w=0.6} nothing. Everything went blank. Next thing I knew, I was standing over him, and…  {w=0.9}and…"
-    "*He breaks down, sobbing.*"
+    show pa behind mc at right:
+        xalign 0.7
 
-    hide mc
-    hide killer1
-    show assholecop1 at left
-    show assholecop2 at right
-    "*Two officers burst into the room*"
-    officer1 "(sneering) That's enough. We'll take it from here."
-    officer2 "(mocking) Guys like him don't deserve your time. He's just playing dumb."
-    "*(The detective exchange a look with them and reluctantly leave the room.)*"
+    
+    mc  "Let's start from the beginning. What do you remember?"
+    killer "I… I don't know. I swear, I don't remember doing this. I woke up, and he was… he was already…"
+    mc "You called the police. Why?"
+    killer "I… I thought I was helping. I didn't know what else to do."
+    mc "What about the phone call? The one before this happened. Do you remember it?"
+    killer "Yeah… yeah, I do. It was… some pizza place. They were advertising a deal or something."
+    mc "What did they say? Anything specific?"
+    killer "It was a man's voice. No background noise, just… some music. I don't know why, but it felt familiar. Like I'd heard it before."
+    mc "And then?"
+    killer "Then… nothing. Everything went blank. Next thing I knew, I was standing over him, and… and…"
+    "*He breaks down sobbing, bloodstained hands clutching his head*"
+
+    label interrogation_loop:
+        menu:
+            "Ask about the music he heard during the call" if not persistent.loop_count:
+                $ choice_made = "music"
+                jump progress_scene
+
+            "Ask about his relationship with the victim":
+                mc "What was your relationship with the victim? Were you close?"
+                killer "He was my friend! My best friend! I would never… I could never…"
+                "*The killer becomes hysterical"
+                pa "Detective, maybe try a different approach..."
+                $ persistent.loop_count = True
+                jump interrogation_loop
+
+            "Ask about the pizza place name again":
+                mc "The pizza place. Do you remember the name?"
+                killer "I… I don't know. It was something simple. I can't remember."
+                "*The killer stares blankly, offering nothing new*"
+                $ persistent.loop_count = True
+                jump interrogation_loop
+
+            "You mentioned music. What did it sound like?" if persistent.loop_count:
+                $ choice_made = "music"
+                jump progress_scene
+
+    label progress_scene:
+        killer "It was… I don't know. Something old. Like from a radio. I can't remember the tune, but it felt… familiar."
+        mc "(Music from a radio? That's specific. Maybe it's a clue.)"
+        "*PA nods subtly, making a note in his pad*"
+
+        scene interrogation with fade
+        show asshole_cop1 at left
+        show asshole_cop2 at right
+        
+        officer1 "That's enough. We'll take it from here."
+        officer2 "Guys like him don't deserve your time. He's just playing dumb."
+        
+        menu:
+            "Say nothing and leave":
+                $ officer_attitude = "silent"
+            
+                "*You exchange a look with PA and exit silently*"
+                "The officers will remember your silence."
+
+            "Respond rudely":
+                $ officer_attitude = "rude"
+                mc  "Maybe if you did your jobs, I wouldn't have to clean up your mess."
+                officer2 "Watch your mouth, new guy."
+                "*PA pulls you away before things escalate*"
+                "The officers will remember your attitude."
+
+        scene black with fade
+        if officer_attitude == "rude":
+            play sound "audio/door_slam.ogg"
+        else:
+            play sound "audio/door_close.ogg"
+
+        jump scene_9
 
 label scene_9:
     scene policedepartment with fade

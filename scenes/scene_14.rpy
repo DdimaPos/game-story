@@ -1,9 +1,9 @@
 label scene_14:
-    # SOUND of closing door of a car
     play sound "car_door_close.mp3"
     scene crimescene2 with fade
-    show mc_sprite at left with dissolve
-    show panormal at right with dissolve:
+    #should create a color filter for sprites in night evening, etc
+    show mc_sprite intrigued at left with dissolve
+    show pa_sprite intrigued at right with dissolve:
         ypos 1200
         xzoom -1.0
 
@@ -19,14 +19,16 @@ label scene_14:
     play sound "phone_beeping.mp3" loop 
     pause 2.0
     show mc_sprite at left with dissolve
-    show panormal at right with dissolve:
+    show pa_sprite at right with dissolve:
         ypos 1200
         xzoom -1.0
 
     pa "This is…{w} something else."
+    "I kneeled to the dead body to take a closer look."
+    "It looked like she had been torn apart by a bear rather than a loving husband"
     mc "Same MO.{w} Brutal cuts, same kind of message." 
     mc "And look—"
-    "I looked at a phone near the window"
+    "I looked at a phone on the window"
     pa "You think it’s connected?"
     mc "I know it is. The killer—where is he?"
     pa "Outside."

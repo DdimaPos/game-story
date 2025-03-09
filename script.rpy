@@ -45,6 +45,7 @@ image murder_house = "housemurder2.png"
 image mc_smoke = "mcsmoke.png"
 image mc_tel = "mctel.png"
 image battlefield2 = "battlefield.png"
+image pills = "pillshere.png"
 
 # Transitions
 define slowdissolve = Dissolve(0.5)
@@ -140,9 +141,13 @@ label scene_3:
     mc "Because I can't go back. The trauma, the amnesia... I'm no longer fit for special ops. So they sent me here."
     doctor "Here?"
     mc "A quiet town. A detective job. Small cases. Small crimes. Trying to put myself back together."
-    doctor "That's enough for today." 
+    doctor "Ok, that's enough for today." 
     play sound "sliding_gun_on_floor.mp3"
+    scene pills with fade
     "*Doctor hands you a small bottle of pills.*"
+    scene doctor_office with fade
+    show dr at left
+    show mc at right
     doctor "One pill a day. Don't forget."
 
     menu:
@@ -162,7 +167,7 @@ label scene_3:
     scene black with fade
 
 label scene_4:
-    scene city1 with fade
+    scene city1 with Dissolve(0.8)
     play music "calm.mp3" fadein 1.0
     mc "(Narrating) It was one of those rare peaceful days. The kind where the city breathes in slow motion, and you can almost pretend nothing bad ever happens."
     mc "(Narrating) No calls, no reports, no paperwork. Just a free day to do absolutely nothing."
@@ -171,15 +176,15 @@ label scene_4:
 # --- SCENE 5: PHONE RING ---
 label scene_5:
     scene apartment_night with fade
-    play music "calm.mp3" fadein 1.0  # Calm background music
-    pause 1.0
+    pause 1.4
     play sound "phone_ring.mp3"  # Phone rings
     show mc_tel at center
     pause 1.4  # Let the sound play for exactly 1.4 seconds
     stop sound fadeout 0.7  # Smooth fadeout
     scene apartment_night with fade
-    show side mc_phone at right
+    show mc_phone at right
     mc "(Groggily) Yeah?"
+    play music "suspense_soundtrack.mp3"
     operator "(Urgent tone) Detective. We need you!!. Now!!."
     mc "(Sleepy) What happened?"
     operator "Murder. First in years. Address is on [Street_Name]  everyone's already there."
@@ -187,11 +192,10 @@ label scene_5:
 # --- SCENE 6: CRIME SCENE ---
 label scene_6:
     scene crimescene1 with fade
-    play music "tension.mp3" fadein 1.0  # Tense background music
     "*The detective approaches PA at the crime scene*"
     scene crimescene2 with fade
     show mc at right
-    show side pa at left:
+    show pa at left:
         ypos 1200
     mc "Give me the rundown."
     pa "(Shaking his head) You picked a hell of a first case."
@@ -203,7 +207,6 @@ label scene_6:
 # --- SCENE 7: MURDER HOUSE ---
 label scene_7:
     scene murder_house with fade
-    play music "suspense_soundtrack.mp3" fadein 1.0  # Suspenseful music
     "*They enter the house, the metallic smell of blood hitting them immediately*"
     show  mc_intrigued at right
     show  pa_depressed at left:
@@ -220,13 +223,14 @@ label scene_7:
             "You approach the bloodied scrawl on the wall: {b}\"IT WASN’T ME\"{/b}"
             mc "(This message… it’s too deliberate. Almost like he’s trying to convince someone. But who?)"
             hide pa 
-            show pa_intrigued at right
+            show pa_intrigued at left:
+                ypos 1200
             pa "Creepy, huh? Like he’s trying to shift the blame."
             mc "Or maybe he’s telling the truth. Either way, we need to check everything."
             jump examine_body
             
         "Examine the victim’s body":
-            show mc at center with move
+            show mc_intrigued at right with move
             "You kneel by the covered body, lifting the sheet slightly."
             mc "(The cuts… they’re too precise. This wasn’t a crime of passion. Someone knew what they were doing.)"
             pa "Brutal, isn’t it? Whoever did this… they weren’t messing around."
@@ -242,6 +246,7 @@ label scene_7:
             jump examine_body_second
 
     label examine_body:
+        show mc_intrigued at right with move
         "You kneel by the covered body, lifting the sheet slightly."
         mc "(Defensive wounds on the arms. Throat cut clean. Professional work.)"
         pa "ME says time of death was around midnight. Same time as the 911 call."
@@ -278,22 +283,22 @@ label scene_7:
         mc "This was personal. Calculated. That message is either a confession..."
         mc "...or someone's desperate attempt to frame another."
         "*The ambient police radio chatter grows louder outside*"
+        scene black with fade
         jump scene_8
 # --- SCENE 8: INTERROGATION ---
 label scene_8:
-    scene interrogation with fade
+    scene interrogation with Dissolve(1)
     play music "tension.mp3" fadein 1.0  # Tense background music
     show killer1 at left
     show mc at right
     show pa behind mc at right:
         xalign 0.7
+        ypos 1200
     show killer1 at shake_animation
     mc "Let's start from the beginning. What do you remember?"
     killer "I… I don't know. I swear, I don't remember doing this. I woke up, and he was… he was already…"
-    play sound "heartbeat.mp3" fadein 1.0  # Subtle tension
     mc "You called the police. Why?"
     killer "I… I thought I was helping. I didn't know what else to do."
-    stop sound fadeout 0.5
     mc "What about the phone call? The one before this happened. Do you remember it?"
     killer "Yeah… yeah, I do. It was… some pizza place. They were advertising a deal or something."
     mc "What did they say? Anything specific?"
@@ -357,19 +362,14 @@ label scene_8:
                 python:
                     rude = True
 
-        scene black with fade
-        if officer_attitude == "rude":
-            play sound "audio/door_slam.ogg"
-        else:
-            play sound "audio/door_close.ogg"
-
         jump scene_9
 
 label scene_9:
     scene policedepartment with fade
-    show pa at left
+    show pa at left:
+        ypos 1200
     show mc at right
-    play music "suspense_soundtrack.mp3" fadein 0.4
+    play music "office_noise.mp3" fadein 0.4
     "*The detective and PA regroup in the hallway*"
     pa "(crossing arms) So, what do you think? You buying his story?"
     mc "(pacing) I don't know. But something's off. The phone call, the music, the way he's reacting... it doesn't add up."
@@ -394,18 +394,19 @@ label scene_10:
     "This one...{w=0.3} this one felt different.{w} Like it wasn't just about the killer or the victim.{w} Like it was about something bigger."
 
 label scene_11:
-    scene black with Dissolve(0.1)
+    scene black with Dissolve(0.4)
     scene mc_house with fade
     play music "calm.mp3" fadein 1.0  # Calm morning music
-    show pa at left:
+    show pa_intrigued at left:
         xalign 0.3 yalign 1.0
+        ypos 1200
     show mc at right:
         xalign 0.7 yalign 1.0
 
     play sound "car_door_close.mp3"  # PA arrives
     "*Next morning, PA bursts into the detective's house*"
     mc "What are you doing here?"
-    pa "(impatient) We're detectives, remember? I know where you live. And I took the bus. Now, can we get moving?"
+    pa "(impatient) We're detectives, remember? I know where you live. Can we get moving?"
     mc "(sighing) Fine. Let's go."
 
     # Transition to police department
@@ -418,18 +419,31 @@ label scene_11_1:
     play music "tension.mp3" fadein 1.0  # Tense background music
     show pa at left:
         xalign 0.3 yalign 1.0
+        ypos 1200
     show mc at right:
         xalign 0.7 yalign 1.0
 
     "*They return to the station for updates*"
+    hide pa
+    show pa_depressed at left:
+        xalign 0.3 yalign 1.0
+        ypos 1200
     pa "(serious) Bad news. The killer's completely unresponsive now."
+    hide mc 
+    show mc_depressed at right:
+        xalign 0.7 yalign 1.0
     mc "(leaning on desk) So, no chance of getting anything else out of him?"
+    hide mc_depressed
+    show mc at right:
+        xalign 0.7 yalign 1.0
     pa "(shaking head) Not unless he snaps out of it. And even then..."
     mc "(straightening up) Then we'll have to work with what we've got. That pizza place - what's the plan?"
-    pa_intrigued "(pulling out list) I've got a list of every pizza joint in the city. We'll start with the ones closest to the crime scene and work our way out."
+    hide pa_depressed
+    show pa_intrigued at left:
+        xalign 0.3 yalign 1.0
+        ypos 1200
+    pa "(pulling out list) I've got a list of every pizza joint in the city. We'll start with the ones closest to the crime scene and work our way out."
     mc "(heading to door) Let's move."
-
-
 
 
     # Transition to next scene

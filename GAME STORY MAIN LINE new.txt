@@ -1,0 +1,564 @@
+SCREEN 1 – Doctor’s Office
+(Dimly lit office, doctor sitting at his desk, flipping through papers. MC sits across from him.)
+
+Doctor: "Let’s start simple. What do you remember about yourself?"
+
+MC: "Not much. My name, my training… fragments of something else."
+
+Doctor: "And the last thing you recall before ‘it’ happened?"
+
+(Screen fades to a battlefield scene—SCREEN 2)
+
+SCREEN 2 – Battlefield, Terrorist Hideout
+(Sounds of gunfire in the distance, dust and smoke in the air.)
+
+MC (voiceover): "I was a soldier. Special Corps. But the details are… blurred."
+
+(Quick flashes of combat—gunfire, orders being shouted, movement through a dimly lit compound.)
+
+MC (voiceover): "I had a mission. Capture someone alive. Someone important. I… I succeeded."
+
+(A sudden, loud explosion cuts through the scene. Everything goes black.)
+
+SCREEN 3 – Doctor’s Office (Back to Present)
+(MC shakes his head slightly, refocusing. Doctor leans forward, listening intently.)
+
+Doctor: "And then?"
+
+MC: "Nothing. Just… waking up in a hospital. Six months in a coma."
+
+Doctor: "Your records say you were awarded medals for your service."
+
+(Optional SCREEN 2.1 – A brief flashback of suited officials presenting medals, MC shaking hands while looking detached.)
+
+MC: "Yeah… Guess I did something right. Not that it matters now."
+
+Doctor: "Why do you say that?"
+
+MC: "Because I can’t go back. The trauma, the amnesia… I’m no longer fit for special ops. So they sent me here."
+
+Doctor: "Here?"
+
+MC: "A quiet town. A detective job. Small cases. Small crimes. Trying to put myself back together."
+
+(Doctor nods, scribbles something in his notes.)
+
+Doctor: "That’s enough for today. Here—take these. One pill a day. Don’t forget."
+
+CHOICE 1: Ask about what those pills are
+(MC hesitates, staring at the pill bottle in his hand before looking up at the doctor.)
+
+MC: "Doc, what exactly are these pills for? You never really explained."
+
+Doctor (pausing, his expression unreadable): "They’re to help with the trauma. The amnesia. They’ll keep your mind… stable. Trust me, you need them."
+
+MC (narrowing his eyes): "Stable how? What aren’t you telling me?"
+
+Doctor (sighing, leaning back in his chair): "You’ve been through a lot, [MC’s Name]. More than most people could handle. Those pills are there to help you cope. To keep the memories from overwhelming you."
+
+MC: "And if I stop taking them?"
+
+Doctor (firmly): "Don’t. Just… don’t. Take one a day. No more, no less. That’s all you need to know."
+
+(MC studies the doctor for a moment, clearly unsatisfied with the answer, but he nods and pockets the pills.)
+
+CHOICE 2: Say nothing
+
+(Hands MC a small bottle of pills. Screen fades to black.)
+
+SCREEN 4 – City Background (Daytime, Calm Atmosphere)
+(Soft ambient city sounds, a slow breeze, warm sunlight over quiet streets.)
+
+Narrator:
+"It was one of those rare peaceful days. The kind where the city breathes in slow motion, and you can almost pretend nothing bad ever happens."
+
+"No calls, no reports, no paperwork. Just a free day to do absolutely nothing."
+
+"I went home. Laid on the bed. And let the silence take over."
+
+(Screen fades to black – transition to night.)
+
+SCREEN 5 – MC’s Apartment (Night Outside, Dimly Lit Room)
+(The loud ring of a phone shatters the silence. MC groggily reaches for it.)
+
+MC (groggy): "Yeah?"
+
+Operator (urgent tone): "Detective. We need you. Now."
+
+MC (blinking awake): "What happened?"
+
+Operator: "Murder. First in years. Address is on ‘[Street Name]’—everyone’s already there."
+
+(MC sighs, rubs his temples, grabs his coat, and leaves. Cut to next scene.)
+
+SCREEN 6 – Murder Scene (Street, House with Police and Ambulance in BG)
+(Red and blue lights flicker against the rain-slick pavement. Officers whisper, reporters lurk, and the tension is thick in the air.)
+
+MC (approaching PA): "Give me the rundown."
+
+PA (arms crossed, shaking his head): "You picked a hell of a first case."
+
+MC: "That bad?"
+
+PA: "Worse. The guy’s inside. Hands covered in blood. Says he didn’t do it."
+
+MC: "And the victim?"
+
+PA (grim): "You’ll want to see for yourself."
+
+(Pause. A moment of silence as the weight of the scene sinks in. MC nods, steps inside.)
+
+SCREEN 7 – Inside the Crime Scene (Dimly Lit Room, Bloodied Message on the Wall: "IT WASN’T ME")
+(The air is thick with the metallic scent of blood. The room is a mess—scratches on the walls, furniture overturned. A lifeless body lies covered on the floor.)
+CHOICE SCREEN:
+CHOICE 1: Focus on the bloodied message first.
+
+MC approaches the wall, staring at the words: "IT WASN’T ME."
+
+MC thinks: "This message… it’s too deliberate. Almost like he’s trying to convince someone. But who?"
+
+PA (walking over): "Creepy, huh? Like he’s trying to shift the blame."
+
+MC: "Or maybe he’s telling the truth. Either way, we need to check everything."
+
+(The player then examines the body and the phone afterward.)
+
+CHOICE 2: Examine the victim’s body first.
+
+MC kneels by the covered body, lifting the sheet slightly.
+
+MC thinks: "The cuts… they’re too precise. This wasn’t a crime of passion. Someone knew what they were doing."
+
+PA (standing nearby): "Brutal, isn’t it? Whoever did this… they weren’t messing around."
+
+MC: "Yeah. But why? And why leave a message like that?"
+
+(The player then examines the bloodied message and the phone afterward.)
+
+CHOICE 3: Inspect the hanging phone first.
+
+MC walks over to the old rotary phone, still hanging off the hook.
+
+MC thinks: "Why is it hanging like that? Almost like someone dropped it in a hurry."
+
+PA (noticing): "You think the call has something to do with this?"
+
+MC: "Maybe. The killer called 911 himself. We need to check this."
+
+(The player then examines the body and the bloodied message afterward.)
+
+
+SCREEN 8 – Interrogation Room (Killer Chained to Desk, MC and PA Present)
+(The room is cold and sterile, with a single flickering light overhead. The killer sits slumped in his chair, hands trembling, eyes darting around like a cornered animal.)
+
+MC (calmly): "Let’s start from the beginning. What do you remember?"
+
+Killer (voice shaky): "I… I don’t know. I swear, I don’t remember doing this. I woke up, and he was… he was already…"
+(He trails off, staring at his bloodstained hands.)
+
+MC: "You called the police. Why?"
+
+Killer: "I… I thought I was helping. I didn’t know what else to do."
+
+MC: "What about the phone call? The one before this happened. Do you remember it?"
+
+Killer (frowning): "Yeah… yeah, I do. It was… some pizza place. They were advertising a deal or something."
+
+MC: "What did they say? Anything specific?"
+
+Killer (struggling to recall): "It was a man’s voice. No background noise, just… some music. I don’t know why, but it felt familiar. Like I’d heard it before."
+
+MC: "And then?"
+
+Killer: "Then… nothing. Everything went blank. Next thing I knew, I was standing over him, and… and…"
+(He breaks down, sobbing.)
+
+LOOPING CHOICES:
+(At this point, the player must choose the right line of questioning to progress. If they choose incorrectly, the killer becomes agitated and unresponsive, and the loop resets.)
+
+Choice A: Ask about the music he heard during the call.
+
+MC: "You mentioned music. What did it sound like?"
+
+Killer (frowning, trying to remember): "It was… I don’t know. Something old. Like from a radio. I can’t remember the tune, but it felt… familiar."
+
+MC thinks: "Music from a radio? That’s specific. Maybe it’s a clue."
+
+(Progress: The player advances to the next scene.)
+
+Choice B: Ask about his relationship with the victim.
+
+MC: "What was your relationship with the victim? Were you close?"
+
+Killer (agitated): "He was my friend! My best friend! I would never… I could never…"
+
+MC thinks: "He’s too emotional. I need to try a different approach."
+
+(Loop resets.)
+
+Choice C: Ask about the pizza place name again.
+
+MC: "The pizza place. Do you remember the name?"
+
+Killer (shaking his head): "I… I don’t know. It was something simple. I can’t remember."
+
+MC thinks: "He’s not giving me anything new. I need to try something else."
+
+(Loop resets.)
+
+Third Choice (After Loop Resets Once):
+Choice D: "You mentioned music. What did it sound like?"
+
+Killer (frowning, trying to remember): "It was… I don’t know. Something old. Like from a radio. I can’t remember the tune, but it felt… familiar."
+
+MC thinks: "Music from a radio? That’s specific. Maybe it’s a clue."
+
+(Progress: The player advances to the next scene.)
+
+Officers Interrupt (After Progressing)
+(At this point, two other officers enter the room, their faces stern and dismissive.)
+
+(After MC questions the killer, two officers enter the room.)
+
+Officer 1: "That’s enough. We’ll take it from here."
+Officer 2 (sneering): "Guys like him don’t deserve your time. He’s just playing dumb."
+
+CHOICE SCREEN - WITH CREDITS
+CHOICE 1: Say nothing and leave.
+
+MC and PA exchange a look but say nothing as they leave the room.
+
+Prompt: "The officers will remember your silence."
+
+CHOICE 2: Respond rudely.
+
+MC (coldly): "Maybe if you did your jobs, I wouldn’t have to clean up your mess."
+
+Officer 2 (glaring): "Watch your mouth, new guy."
+
+Prompt: "The officers will remember your attitude."
+
+(MC and PA exchange a look but reluctantly leave the room.)
+
+SCREEN 9 – Police Department Hallway (MC and PA Discuss the Case)
+(The hallway is quiet, save for the distant hum of fluorescent lights. PA leans against the wall, arms crossed, while MC paces, deep in thought.)
+
+PA: "So, what do you think? You buying his story?"
+
+MC: "I don’t know. But something’s off. The phone call, the music, the way he’s reacting… it doesn’t add up."
+
+PA: "You think he’s telling the truth? That he didn’t do it?"
+
+MC: "I think there’s more to this than we’re seeing. And I’m not ready to write him off just yet."
+
+PA (sighs): "You’re gonna make this harder than it needs to be, aren’t you?"
+
+MC (smirking slightly): "Wouldn’t be the first time."
+
+PA: "Alright, fine. Where do we start?"
+
+MC: "That pizza place. We need to find out who called him."
+
+PA: "You really think a pizza ad is connected to this?"
+
+MC: "I don’t know. But it’s the only lead we’ve got."
+
+(They head out, the weight of the case hanging heavy in the air.)
+
+SCREEN 10 – MC Smoking a Cigarette Near His Car (Nighttime)
+(The rain has stopped, leaving the streets glistening under the dim glow of streetlights. MC takes a long drag from his cigarette, staring off into the distance.)
+
+Narrator:
+"Some cases stick with you. Not because of the blood, or the bodies, or the mess. But because of the questions they leave behind. The ones that keep you up at night, gnawing at the edges of your mind."
+
+"This one… this one felt different. Like it wasn’t just about the killer or the victim. Like it was about something bigger. Something I couldn’t quite see yet."
+
+(MC flicks the cigarette away and gets into his car, the engine roaring to life as the screen fades to black.)
+
+SCREEN 11 – MC’s House (Morning, PA Waiting Outside)
+(PA is leaning against the hood of MC’s car, arms crossed, looking impatient. MC steps out, surprised to see him.)
+
+MC: "What are you doing here?"
+
+PA: "We’re detectives, remember? I know where you live. And I took the bus. Now, can we get moving?"
+
+MC (sighs): "Fine. Let’s go."
+
+(They get into the car, the tension palpable as they drive off.)
+
+SCREEN 11.1 – Police Department (MC and PA Discuss the Killer’s Condition)
+(PA is leaning over a desk, flipping through files, while MC stands nearby, arms crossed.)
+
+PA: "Bad news. The killer’s completely unresponsive now. Freaked out during questioning and passed out. They’re moving him to a holding cell until the trial."
+
+MC: "So, no chance of getting anything else out of him?"
+
+PA: "Not unless he snaps out of it. And even then…"
+(He trails off, shaking his head.)
+
+MC: "Then we’ll have to work with what we’ve got. That pizza place—what’s the plan?"
+
+PA: "I’ve got a list of every pizza joint in the city. We’ll start with the ones closest to the crime scene and work our way out."
+
+MC: "Let’s move."
+
+(They head out, the screen fading to black as the narrator sets the stage for their search.)
+
+SCREEN 12 – Killer’s Cell (MC and PA Visit the Killer Again)
+(The killer sits slumped in his cell, staring blankly at the wall. MC approaches, his tone calm but firm.)
+
+MC: "We need to talk. About the pizza place. What was the name?"
+
+Killer (barely audible): "I… I don’t remember. It was something… something simple."
+
+MC: "Think. Was it a man or a woman who called?"
+
+Killer: "A man. Just a man. And… there was music. I don’t know why, but it felt… familiar."
+
+MC: "What kind of music?"
+
+Killer (shaking his head): "I don’t know. I can’t remember. But it’s important. I know it is."
+
+(MC exchanges a look with PA, who shrugs helplessly.)
+
+MC: "We’ll find it. But you need to help us. Anything else you remember?"
+
+Killer (desperate): "Please… you have to believe me. It wasn’t me. I didn’t do this."
+
+(MC nods, but before he can respond, the two officers from earlier appear, their mocking laughter echoing down the hallway.)
+
+(After MC questions the killer again, the same two officers enter the room.)
+
+CHOICE SCREEN - WITH CREDITS
+If you chose to say nothing the first time:
+Officer 1: "Still chasing pizza leads, huh? Maybe you should stick to traffic duty."
+Officer 2 (joking): "Yeah, leave the real police work to us."
+
+They’re still dismissive but not openly hostile.
+
+If you chose to respond rudely the first time:
+Officer 1 (coldly): "Still wasting time, huh? Maybe you should stick to traffic duty."
+Officer 2 (aggressively): "Yeah, leave the real police work to those who can handle it."
+
+They’re noticeably more hostile and rude.
+SCREEN 13 – MC’s Car (MC and PA Discuss the Search)
+(PA is holding a city map, tracing their route with a finger. MC drives, his eyes focused on the road.)
+
+PA: "We’ve checked every pizza place in the city. Nothing matches the description."
+
+MC: "It doesn’t make sense. There’s no way we missed it."
+
+PA: "Unless it’s not on the map. Or… it doesn’t exist."
+
+MC: "Either way, we’re running out of time."
+
+(Their conversation is interrupted by the sound of sirens. A call comes in—another murder has occurred.)
+
+PA: "You’ve got to be kidding me."
+
+MC (grim): "Let’s go."
+
+(The screen fades to black as they speed toward the new crime scene.)
+
+SCREEN 14 – Second Murder Scene (Rainy Night, Police Lights Flashing)
+(The scene is eerily similar to the first murder—police cars, an ambulance, and a crowd of onlookers gathered outside a small house. MC and PA arrive, stepping out of the car into the rain.)
+
+PA (grim): "This is bad. Two murders in two days? This town hasn’t seen something like this in decades."
+
+MC (staring at the house): "Let’s see what we’re dealing with."
+
+(They approach the house, the tension thick in the air. Inside, the scene is even more gruesome than the first—blood splattered across the walls, furniture overturned, and another message scrawled in blood: "OR WAS IT?")
+
+PA (whistles low): "This is… something else."
+
+MC (kneeling by the body): "Same MO. Brutal cuts, same kind of message. And look—"
+(He points to the phone, hanging off the hook just like in the first scene.)
+
+PA: "You think it’s connected?"
+
+MC: "I know it is. The killer—where is he?"
+
+PA: "Outside. He’s in custody. But… you’re gonna want to see this."
+
+SCREEN 15 – Outside the House (Killer in Custody, Blank Stare)
+(The killer sits on the curb, hands cuffed, his face pale and expressionless. His clothes are soaked in blood, and his eyes are wide, unseeing.)
+
+MC (approaching): "What’s your name?"
+
+Killer (barely audible): "I… I don’t know. I don’t know what happened."
+
+MC: "What do you remember?"
+
+Killer (voice trembling): "I was home. My wife was… she was making dinner. Then the phone rang. It was… it was a burger place. They were advertising something. And then…"
+(He trails off, his hands shaking.)
+
+MC: "And then what?"
+
+Killer (breaking down): "I don’t know! I woke up, and she was… she was…"
+(He collapses into sobs, his words incoherent.)
+
+PA (whispering to MC): "This is exactly like the first one. The phone call, the blackout, the murder. What the hell is going on?"
+
+MC (grim): "We’re missing something. Something big."
+
+SCREEN 16 – Police Department (Chaos Ensues)
+(The station is in an uproar—officers rushing back and forth, phones ringing off the hook, and the buzz of panic filling the air. MC and PA stand in the middle of it all, trying to make sense of the situation.)
+
+PA: "This is a nightmare. Two murders, two killers, both claiming they don’t remember a thing. And that phone call… it’s the only link we’ve got."
+
+MC: "We need to track that call. Find out where it came from."
+
+PA: "Easier said than done. Without a name or a location, we’re shooting in the dark."
+
+(Just then, a phone rings at the front desk. The officer answering it calls out to MC.)
+
+Officer: "Detective! It’s for you."
+
+(MC exchanges a look with PA before walking over to the phone.)
+
+SCREEN 17 – MC on the Phone (Mysterious Caller)
+(MC picks up the phone, his expression tense.)
+
+MC: "This is Detective [MC’s Name]."
+
+Mysterious Caller (distorted voice): "Listen carefully. If you want to stop the next murder, come to [PLACE] at midnight. Tell no one. If you do, you’ll find nothing but an empty room."
+
+MC: "Who is this? What do you want?"
+
+Mysterious Caller: "Midnight. Don’t be late."
+(The line goes dead.)
+
+(MC slowly hangs up the phone, his mind racing. PA approaches, curious.)
+
+PA: "Who was that?"
+
+CHOICE 1:Tell him the truth 
+
+MC (hesitating): "It was… a tip. Someone called about the case. They said if I want to stop the next murder, I need to go to [PLACE] at midnight. Alone."
+
+PA (raising an eyebrow): "Alone? That sounds like a trap."
+
+MC (nodding): "Yeah. But it’s the only lead we’ve got."
+
+PA (thoughtful): "You sure about this? I don’t like the sound of it."
+
+MC: "I don’t either. But if there’s a chance to stop another killing, I have to take it."
+
+PA (sighing): "Alright. But if you’re going, I’m going with you. No arguments."
+
+MC (reluctantly): "Fine. But we need to be careful. This guy… he’s playing games with us."
+
+PA (grim): "Yeah, I got that. Let’s move."
+
+Prompt: (PA will remember your honesty.)
+
+SCREEN 18 – Arriving at the Location (Empty Building)
+(MC and PA arrive at the abandoned building together. The place is dark and silent, with no signs of life.)
+
+narrator: (The building stood like a forgotten relic of a time long past. Its windows were shattered, its walls cracked and stained with years of neglect. The air was heavy with the scent of decay, and the only sound was the faint creak of the wind pushing against the broken door."
+Somewhere inside, the answers waited. Or maybe it was just another trap. Either way, there was no turning back now.)
+
+PA (scanning the area): "This place gives me the creeps. You sure this is the right spot?"
+MC (grim): "It’s the address he gave me. Let’s check it out."
+
+(They step inside, guns drawn, scanning the room. The place is empty except for a single chair in the center, illuminated by a flickering light. On the chair is an old rotary phone, ringing loudly.)
+
+PA (nervously): "What the hell…?"
+
+(MC approaches the phone and picks it up. The MP’s distorted voice comes through.)
+
+MP: "Alone. Didn’t I tell you? Now go. There’s another case for you. Maybe if you hurry, it won’t be too late."
+
+(The line goes dead. MC slams the phone down, frustrated.)
+
+PA (confused): "What was that? Who was that?"
+MC (angrily): "He knew. He knew I’d bring you."
+PA (frustrated): "So this was a waste of time? What now?"
+MC (grim): "We follow his lead. There’s another case. And we’re running out of time."
+
+*ENDING 1* -
+(Still shot: MC and PA stand in the abandoned building, the flickering light casting long shadows. The phone lies silent on the chair, and the room feels emptier than ever.)
+
+Narrator:
+"And so, the detectives stood in the hollow silence of a forgotten place, their hopes of answers shattered like the broken windows around them. The caller had vanished, leaving only a cruel reminder: they were always one step behind."
+
+"But the game wasn’t over. Not yet. Somewhere out there, another life hung in the balance. And as the clock ticked toward midnight, the question remained—could they stop the next murder before it was too late?"
+
+(Scene fades to black with the sound of a ticking clock.)
+
+CHOICE 2: Lie to PA
+MC (hesitating): "Just… a friend. Updating me on something. Nothing important."
+
+Prompt: (PA raises an eyebrow ,showing distrust.)
+
+SCREEN 18 – MC’s Car (Driving Home, Nighttime)
+(The rain has started again, the windshield wipers swishing back and forth as MC drives in silence. The narrator’s voice cuts through the tension.)
+
+Narrator:
+"Some cases pull you in. They wrap themselves around you, digging deeper and deeper until they become a part of you. This one… this one felt like it was just getting started."
+
+"And that call… it wasn’t just a lead. It was a challenge. A test. And I had no choice but to take it."
+
+(The screen fades to black as MC pulls into his driveway.)
+
+SCREEN 19 – MC’s House (Morning, Preparing for the Night)
+(MC is in his living room, loading his gun and checking his gear. The camera pans to the pill bottle on the table—he pauses, staring at it for a moment before taking one and swallowing it.)
+
+Narrator:
+"Midnight. That’s when it would happen. That’s when I’d get my answers. Or die trying."
+
+(He grabs his coat and heads out the door, the screen fading to black.)
+
+SCREEN 20 – MC’s Car (Approaching [PLACE] at Midnight)
+(The car pulls up to an abandoned building on the outskirts of town. The place is dark and foreboding, with broken windows and overgrown weeds. MC steps out of the car, his breath visible in the cold night air.)
+
+Narrator:
+"This was it. The place from the call. The place where everything would change."
+
+(MC checks his gun one last time before walking toward the building.)
+
+SCREEN 21 – Inside the Abandoned Building (Empty Chair, Dim Light)
+(The interior is dark and decrepit, with a single chair sitting in the center of the room, illuminated by a flickering light. MC steps inside, his footsteps echoing.)
+
+MC: "I’m here. Show yourself."
+
+(Suddenly, a figure steps out of the shadows—a masked man holding a gun to the head of a bound and gagged captive. The scene is tense, the air thick with danger.)
+
+Mysterious Caller: "Drop your weapon. Or he dies."
+
+(MC hesitates but slowly places his gun on the ground, kicking it toward the caller.)
+
+Mysterious Caller: "Good. Now we can talk."
+(He tosses an envelope toward MC.)
+
+MC (picking it up): "What is this?"
+
+Mysterious Caller: "The address of the next murder. The choice is yours."
+
+(Without warning, the caller shoots the captive, the sound of the gunshot echoing through the room. The body slumps to the ground as the caller disappears into the shadows.)
+
+CHOICE 6 – FOLLOW MP
+(MC hesitates for a moment before sprinting after the caller, determined to catch him.)
+
+*ENDING 2* - 
+(Still shot: MC sprints into the shadows, chasing the faint silhouette of the masked caller. The abandoned building fades into the distance, and the night swallows him whole.)
+
+Narrator:
+"Into the darkness he ran, chasing a shadow that always seemed just out of reach. The caller had led him here, to the edge of reason, and now the detective was plunging headfirst into the unknown."
+
+"But the deeper he went, the more the lines blurred. Was he chasing the truth? Or was the truth chasing him? One thing was certain—the game was far from over, and the stakes were higher than ever."
+
+(Scene fades to black with the sound of footsteps echoing into the void.)
+
+CHOICE 7 – HURRY TO THE ADDRESS
+(MC grabs the envelope and rushes out of the building, knowing he has no time to waste.)
+
+*ENDING 3* -
+(Still shot: MC speeds through the rain-soaked streets, the envelope clutched tightly in his hand. The city blurs around him as he races against time.)
+
+Narrator:
+"The address burned in his mind, a beacon in the storm. The detective raced through the night, each second ticking closer to disaster. Somewhere ahead, another life hung in the balance, and the clock was running out."
+
+"But as the city lights flickered past, one question lingered—what would he find at the end of the road? A chance to stop the killer? Or another cruel twist in a game he didn’t fully understand?"
+
+(Scene fades to black with the sound of a car engine roaring and rain pounding against the windshield.)

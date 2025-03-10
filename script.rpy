@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+﻿label start:
+    stop music fadeout 0.5
+    jump scene_12 
+=======
 ﻿
 # Define characters
 define doctor = Character("Doctor", color="#a8d8ea")
@@ -64,3 +69,4 @@ python:
 # Start of the game
 label start:
     jump scene_1
+>>>>>>> origin/dev

@@ -1,0 +1,11 @@
+define doctor = Character("Doctor", color="#a8d8ea")
+define mc = Character("Detective", color="#c0c0c0")
+define pa = Character("PA", color="#808080")
+define killer = Character("Killer", color="#ff6666")
+define killer2 = Character("Killer", color="#ff8666")
+define officer1 = Character("Officer 1", color="#999999")
+define officer2 = Character("Officer 2", color="#999999")
+define operator = Character("Operator", color="#66ccff")
+define mysterious = Character("Mysterious Caller", color="#ff0000")
+define Street_Name = "2980 Lyndon Street"
+define nvle = Character(None, kind=nvl, )

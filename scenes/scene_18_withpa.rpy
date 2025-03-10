@@ -7,12 +7,8 @@ label scene_18_withpa: # ending 1
     "Somewhere inside, the answers waited."
     "Or maybe it was just another trap."
     "Either way, there was no turning back now."
-    pa "This place gives me the creeps."
-    pa "You sure this is the right spot?"
-    mc "It’s the address he gave me." 
-    mc "Let’s check it out."
 
-    scene black with fade
+    scene ending2_scene with fade
     play sound "footsteps.mp3"
     pause 2.0
     pa "This place gives me the creeps. You sure this is the right spot?"
@@ -24,7 +20,8 @@ label scene_18_withpa: # ending 1
     play sound "phone_ring.mp3" loop
     show panormal at left with dissolve:
         ypos 1200
-    show mc_sprite at slight_right with dissolve
+    show mc_sprite at center with dissolve
+    show phone_chair at right 
     pa "What the hell..."
     pause 1.0
     play sound "phone_hang_up.mp3"

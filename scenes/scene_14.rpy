@@ -25,10 +25,10 @@ label scene_14:
 
     pa "This is…{w} something else."
     "I kneeled to the dead body to take a closer look."
-    "It looked like she had been torn apart by a bear rather than a loving husband"
+    "It looked like she had been torn apart by a bear rather than a loving husband."
     mc "Same MO.{w} Brutal cuts, same kind of message." 
     mc "And look—"
-    "I looked at a phone on the window"
+    "I looked at a phone on the window."
     pa "You think it’s connected?"
     mc "I know it is. The killer—where is he?"
     pa "Outside."

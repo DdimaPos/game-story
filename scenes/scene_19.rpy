@@ -1,5 +1,8 @@
 label scene_19:
-    # ART of a gun on the table, bullets nearby and bottle on the same table
+    scene mctable with fade
+    window hide
+    pause 2.0
+    window show
     "Midnight." 
     "That’s when it would happen." 
     "That’s when I’d get my answers." 

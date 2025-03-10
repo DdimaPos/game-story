@@ -31,10 +31,15 @@ label scene_12:
     show asshole_cop1_sprite at slight_left behind mc with dissolve 
 
     #need to add consequence of choice branching here
-    officer1 "Still chasing pizza leads, huh?{w} Maybe you should stick to traffic duty."
-    show asshole_cop2_sprite at Position(xalign=-0.1) behind mc with dissolve 
-    officer2 "Yeah, leave the real police work to us."
-     
+    if True:
+        officer1 "Still chasing pizza leads, huh?{w} Maybe you should stick to traffic duty."
+        show asshole_cop2_sprite at Position(xalign=-0.1) behind mc with dissolve 
+        officer2 "Yeah, leave the real police work to us."
+    else:
+        officer1 "Still wasting time, huh? Maybe you should stick to traffic duty."
+        show asshole_cop2_sprite at Position(xalign=-0.1) behind mc with dissolve 
+        officer2 "Yeah, leave the real police work to those who can handle it."
+
     show mc_sprite at center with move 
     show killer2_sprite at right with dissolve
     mc "We’ll figure this out. I promise."

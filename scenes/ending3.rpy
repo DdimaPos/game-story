@@ -22,7 +22,7 @@ label ending3:
     "My desperation was palpable, every move fueled by a mix of fear and determination." 
     "But in my haste, I failed to notice the cracks in the facade—the signs that something was terribly wrong."
 
-    scene black with fade
+    scene home_inside with fade
     pause 0.2
     play sound "door_slamming.mp3"
     "I rushed to the house and broke the door. I was afraid that I would be too late"

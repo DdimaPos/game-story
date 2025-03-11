@@ -48,7 +48,8 @@ label scene_21:
 label scene_21_chosing:
     if visualized_ending:
         #show the scenes with flashing effect as mcc comes back to reality
-        scene abandonedinside with dissolve
+        play sound "bell.mp3"
+        scene abandonedinside with flash_white 
         show hostagedead at center:
             ypos 1300
         "I came back to reality."
@@ -66,4 +67,4 @@ label scene_21_chosing:
                 jump ending2
             "Hurry to adress":
                 $ visualized_ending = True
-                jump scene_22
+                jump ending3

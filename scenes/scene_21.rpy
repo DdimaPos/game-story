@@ -41,11 +41,29 @@ label scene_21:
         ypos 1300
     # SOUND Intense music, maybe we can make the previous music faster or louder
     pause 0.2
-    mc "HOLY F...  "
+    mc "HOLY F..."
     "I can't let him go now."
     "But what if somebody dies while I try to catch him."
-    menu:
-        "Follow the guy":
-            jump ending2
-        "Hurry to adress":
-            jump ending3
+
+label scene_21_chosing:
+    if visualized_ending:
+        #show the scenes with flashing effect as mcc comes back to reality
+        scene abandonedinside with dissolve
+        show hostagedead at center:
+            ypos 1300
+        "I came back to reality."
+        "My head is burning.{w} I don't know what is this."
+        "Is this the consequence that I stopped taking pills?{w} Probably."
+        "But its not the time to think about this now."
+        "That trip showed me that if I do this I will loose probably the only opportunity to catch him."
+        "I won't let him slip!"
+        menu:
+            "Follow the guy":
+                jump ending2
+    else:
+        menu:
+            "Follow the guy":
+                jump ending2
+            "Hurry to adress":
+                $ visualized_ending = True
+                jump scene_22
